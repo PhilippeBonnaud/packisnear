@@ -60,6 +60,17 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:center;
+    padding: 40px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.halfscreen {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 40px 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -123,7 +134,27 @@ ul {
 }
 
 .portrait-item {
-    width: 48%;
+    width: 40vw;
+}
+
+.portraits {
+    width: 300px;
+}
+
+.sign-up {
+    margin-top: 2rem;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--text);
+    border-radius: 0.5rem ;
+    background-color: var(--highlight);
+    font-family: "Poppins", sans-serif;
+    color: var(--background);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 footer {
@@ -140,19 +171,26 @@ footer {
     bottom: 30px;
     right: 30px;
     background-color: var(--highlight);
-    color: white;
     border: none;
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    font-size: 1.5rem;
     cursor: pointer;
     display: none;
     z-index: 1001;
 }
 
+section a {
+    font-weight: 600;
+}
+
 #scrollTopBtn:hover {
     background-color: var(--text);
+}
+
+#arrowUp {
+    width: 90px;
+    height: 90px;
 }
 
 @media (max-width: 768px) {
@@ -162,7 +200,7 @@ footer {
         align-self: center;
     }
 
-    nav {
+    header {
         display: none;
     }
 
@@ -183,6 +221,10 @@ footer {
         padding: 80px 20px;
     }
 
+    .halfscreen {
+        padding: 80px 20px;
+    }
+
     ul {
         padding-left: 1rem;
     }
@@ -195,4 +237,23 @@ footer {
     .portrait-item {
         width: 100%;
     }
+
+    #scrollTopBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--highlight);
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+}
+#arrowUp {
+    width: 45px;
+    height: 45px;
+}
+
 }
