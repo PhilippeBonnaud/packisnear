@@ -39,6 +39,10 @@ nav ul {
     align-items: center;
 }
 
+nav ul li {
+    min-width: 10rem;
+}
+
 nav a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -135,6 +139,7 @@ ul {
 
 .portrait-item {
     width: 40vw;
+    margin: 1rem; 
 }
 
 .portraits {
