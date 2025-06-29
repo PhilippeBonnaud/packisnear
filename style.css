@@ -125,6 +125,10 @@ ul {
     text-align: left;
 }
 
+p#email-link {
+    text-align: center;
+}
+
 .fullscreen:nth-child(even) {
     background-color: var(--backgroundPop);
 }
